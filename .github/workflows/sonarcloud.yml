@@ -18,3 +18,7 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=Pavaniangadi24_flake8-sonarcloud-integration
+            -Dsonar.organization=pavaniangadi24
